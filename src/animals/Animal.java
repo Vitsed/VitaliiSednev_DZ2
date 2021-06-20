@@ -5,6 +5,15 @@ import food.Food;
 public abstract class Animal {
 
     int energy;
+    String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getEnergy() {
         return energy;

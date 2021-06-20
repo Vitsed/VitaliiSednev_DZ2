@@ -45,5 +45,8 @@ public class Zoo {
             worker.getVoice(animalVoice);
         }
 
+
+        Cage<Carnivore> carnivoreCage = new Cage<>();
+        carnivoreCage.addAnimal(lion);
     }
 }
