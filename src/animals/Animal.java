@@ -6,6 +6,15 @@ public abstract class Animal {
 
     int energy;
     String name;
+    Size animalSize;
+
+    public Size getAnimalSize() {
+        return animalSize;
+    }
+
+    public void setAnimalSize(Size animalSize) {
+        this.animalSize = animalSize;
+    }
 
     public String getName() {
         return name;
@@ -23,5 +32,5 @@ public abstract class Animal {
         this.energy = energy;
     }
 
-    public abstract void eat(Food food);
+    public abstract void eat(Food food) throws WrongFoodException;
 }
