@@ -7,6 +7,16 @@ public class Zebra extends Herbivore implements Run, Voice {
     }
 
     @Override
+    public void move() {
+
+    }
+
+    @Override
+    public void creep() {
+
+    }
+
+    @Override
     public String voice() {
         return "Neigh";
     }

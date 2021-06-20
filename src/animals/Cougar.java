@@ -8,6 +8,16 @@ public class Cougar extends Carnivore implements Voice, Run {
     }
 
     @Override
+    public void move() {
+
+    }
+
+    @Override
+    public void creep() {
+
+    }
+
+    @Override
     public String voice() {
         return "Growl";
     }
