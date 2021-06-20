@@ -31,11 +31,19 @@ public class Zoo {
             animal.swim();
         }
 
-        for(Animal animal : animals) {
-            for(Food f : food) {
+        for (Animal animal : animals) {
+            for (Food f : food) {
                 System.out.print(animal.getClass().getSimpleName() + " is fed " + f.getClass().getSimpleName() + ", reaction:  ");
                 worker.feed(animal, f);
             }
         }
+
+        Voice[] voices = {lion, duck, cougar, zebra, hare, /*fish*/}; // not compile if we try to add voiceless animal
+
+        for (Voice animalVoice : voices) {
+            System.out.println(animalVoice.getClass().getSimpleName() + " is saying: " );
+            worker.getVoice(animalVoice);
+        }
+
     }
 }

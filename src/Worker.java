@@ -9,6 +9,6 @@ public class Worker {
     }
 
     public void getVoice(Voice animal) {
-        animal.voice();
+        System.out.println(animal.voice());
     }
 }
