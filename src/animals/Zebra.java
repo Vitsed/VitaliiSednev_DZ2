@@ -2,6 +2,15 @@ package animals;
 
 public class Zebra extends Herbivore implements Run, Voice {
 
+    private String name;
+
+    public Zebra() {
+    }
+
+    public Zebra(String name) {
+        this.name = name;
+    }
+
     @Override
     public void run() {
         System.out.println("Zebra is running");

@@ -2,6 +2,15 @@ package animals;
 
 public class Duck extends Herbivore implements Fly, Swim, Run, Voice {
 
+    private String name;
+
+    public Duck() {
+    }
+
+    public Duck(String name) {
+        this.name = name;
+    }
+
     @Override
     public void fly() {
         System.out.println("Duck is flying");
