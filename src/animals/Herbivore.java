@@ -6,11 +6,11 @@ import food.Grass;
 public abstract class Herbivore extends Animal {
 
     @Override
-    public void eat(Food food) {
+    public void eat(Food food) throws WrongFoodException {
         if (food instanceof Grass) {
             System.out.println("Ingest food");
         } else {
-            System.out.println("Herbivore don't eat meat!");
+            throw new WrongFoodException();
         }
     }
 }

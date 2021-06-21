@@ -9,13 +9,12 @@ public class Zoo {
 
         Worker worker = new Worker();
 
-        Fish fish = new Fish();
-        fish.setAnimalSize(Size.SMALL);
-        Duck duck = new Duck();
-        Cougar cougar = new Cougar();
-        Hare hare = new Hare();
-        Lion lion = new Lion();
-        Zebra zebra = new Zebra();
+        Fish fish = new Fish("croudy");
+        Duck duck = new Duck("kryakva");
+        Cougar cougar = new Cougar("igan");
+        Hare hare = new Hare("fluffy");
+        Lion lion = new Lion("leva");
+        Zebra zebra = new Zebra("melman");
 
         ArrayList<Animal> animals = new ArrayList<>();
         animals.add(fish);
@@ -48,8 +47,6 @@ public class Zoo {
         }
 
         Cage<Carnivore> carnivoreCage = new Cage<>();
-
-        lion.setName("leva");
 
         carnivoreCage.addAnimal(lion);
         carnivoreCage.addAnimal(fish);
