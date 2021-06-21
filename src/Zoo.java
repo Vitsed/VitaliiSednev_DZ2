@@ -1,6 +1,8 @@
 import animals.*;
 import food.*;
 
+import java.util.ArrayList;
+
 public class Zoo {
 
     public static void main(String[] args) {
@@ -15,7 +17,13 @@ public class Zoo {
         Lion lion = new Lion();
         Zebra zebra = new Zebra();
 
-        Animal[] animals = {fish, duck, cougar, hare, lion, zebra};
+        ArrayList<Animal> animals = new ArrayList<>();
+        animals.add(fish);
+        animals.add(duck);
+        animals.add(cougar);
+        animals.add(hare);
+        animals.add(lion);
+        animals.add(zebra);
 
         Meat beef = new Beef();
         Meat pork = new Pork();
@@ -24,14 +32,14 @@ public class Zoo {
         Grass fruits = new Fruits();
         Grass vegetation = new Vegetation();
 
-        Food[] food = {beef, pork, cannedMeat, hay, fruits, vegetation};
+        ArrayList<Food> food = new ArrayList<>();
+        food.add(beef);
+        food.add(pork);
+        food.add(cannedMeat);
+        food.add(hay);
+        food.add(fruits);
+        food.add(vegetation);
 
-//        Swim[] pond = {duck, fish};
-//
-//        for (Swim animal : pond) {
-//            animal.swim();
-//        }
-//
         for (Animal animal : animals) {
             for (Food f : food) {
                 System.out.print(animal.getClass().getSimpleName() + " is fed " + f.getClass().getSimpleName() + ", reaction:  ");
@@ -56,7 +64,6 @@ public class Zoo {
         carnivoreCage.addAnimal(cougar);
 
         System.out.println(carnivoreCage.getAnimal("leva"));
-
 
 
     }
