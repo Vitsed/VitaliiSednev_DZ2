@@ -46,14 +46,6 @@ public class Zoo {
                 worker.feed(animal, f);
             }
         }
-//
-//        Voice[] voices = {lion, duck, cougar, zebra, hare, /*fish*/}; // not compile if we try to add voiceless animal
-//
-//        for (Voice animalVoice : voices) {
-//            System.out.println(animalVoice.getClass().getSimpleName() + " is saying: " );
-//            worker.getVoice(animalVoice);
-//        }
-
 
         Cage<Carnivore> carnivoreCage = new Cage<>();
 
