@@ -12,6 +12,11 @@ public class Zebra extends Herbivore implements Run, Voice {
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public void run() {
         System.out.println("Zebra is running");
     }

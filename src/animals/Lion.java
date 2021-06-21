@@ -11,6 +11,10 @@ public class Lion extends Carnivore implements Run, Voice {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public void run() {
 
@@ -30,4 +34,5 @@ public class Lion extends Carnivore implements Run, Voice {
     public String voice() {
         return "Roar";
     }
+
 }

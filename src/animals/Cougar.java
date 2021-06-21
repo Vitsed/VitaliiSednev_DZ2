@@ -11,6 +11,11 @@ public class Cougar extends Carnivore implements Voice, Run {
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public void run() {
         System.out.println("Cougar is running");
     }
