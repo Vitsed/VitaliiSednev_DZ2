@@ -12,6 +12,11 @@ public class Hare extends Herbivore implements Voice, Run {
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public void run() {
         System.out.println("Hare is running");
     }

@@ -11,6 +11,11 @@ public class Fish extends Carnivore implements Swim{
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public void swim() {
         System.out.println("Fish is swimming");
     }

@@ -47,13 +47,20 @@ public class Zoo {
         }
 
         Cage<Carnivore> carnivoreCage = new Cage<>();
+        carnivoreCage.setCageSize(Size.ENORMOUS);
+        lion.setAnimalSize(Size.BIG);
 
-        carnivoreCage.addAnimal(lion);
-        carnivoreCage.addAnimal(fish);
-        carnivoreCage.addAnimal(cougar);
+        boolean isFit = carnivoreCage.addAnimal(lion);
+        System.out.println(isFit + " " + lion.getName());
+
+        System.out.println(carnivoreCage.getAnimals());
+
 
         System.out.println(carnivoreCage.getAnimal("leva"));
 
+        System.out.println(carnivoreCage.removeAnimal(cougar));
+
 
     }
+
 }
