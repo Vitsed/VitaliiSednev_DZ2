@@ -2,6 +2,8 @@ package animals;
 
 import food.Food;
 
+import java.util.Objects;
+
 public abstract class Animal {
 
     int energy;
@@ -34,4 +36,18 @@ public abstract class Animal {
 
     public abstract void eat(Food food) throws WrongFoodException;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Animal)) return false;
+
+        Animal animal = (Animal) o;
+
+        return Objects.equals(name, animal.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return name != null ? name.hashCode() : 0;
+    }
 }
